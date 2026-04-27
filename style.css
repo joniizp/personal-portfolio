@@ -1,6 +1,6 @@
 body {
-  /*background-image: url("images/header.png");*/
-  background-image: linear-gradient(purple, red, blue);
+  background-image: url("imagesp/perception.jpg");
+  /*background-image: linear-gradient(purple, red, blue);*/
   font-family: Helvetica, Arial, sans-serif;
   color: white;
   margin: 0;
@@ -54,7 +54,7 @@ ul, ol {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #aa04a2;
+  background-color: #fc8b83;
   color: white;
 }
 
