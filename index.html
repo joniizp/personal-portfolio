@@ -62,8 +62,12 @@ of the page.-->
     </p>
   </div>
 
-<div class="img_right" id="project2" onclick="playVideo()">
-  <img src="imagesp/think.jpg" style="cursor: pointer;" alt="Click to play video">
+<div class="img_right" id="project2">
+  <img 
+    src="imagesp/think.jpg" 
+    style="cursor: pointer; width: 100%;" 
+    onclick="playHostedVideo()" 
+    alt="Click to play video">
 </div>
 
 <div class="text_left">
@@ -89,18 +93,13 @@ of the page.-->
   </div>
   
 <script>
-function playVideo() {
+function playHostedVideo() {
   const container = document.getElementById('project2');
-  
-  container.innerHTML = `
-    <iframe 
-      width="100%" 
-      height="315" 
-      src="https://youtu.be/tn4aTw7pchQ?si=mPxnX5XDWLB_Q6Jn" 
-      frameborder="0" 
-      allow="autoplay; encrypted-media" 
-      allowfullscreen>
-    </iframe>`;
+   container.innerHTML = `
+    <video width="100%" height="auto" controls autoplay>
+      <source src="imagesp/think_of_yooko.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>`;
 }
 </script>
 
