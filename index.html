@@ -68,19 +68,31 @@ of the page.-->
   </div>
 </div>
 
-<div class="project-container">
-  <!-- Image Section -->
-  <div class="img-center" id="project2">
+<div class="project-wrapper">
+  <div class="project-media" id="project2">
+    <!-- The Image (Visible by default) -->
     <img 
       src="imagesp/think.jpg" 
       id="videoPlaceholder"
-      style="cursor: pointer; width: 100%; max-width: 600px; display: block;" 
+      style="cursor: pointer; width: 100%; display: block;" 
       onclick="showVideo()" 
       alt="Click to play video">
+
+    <!-- The Video Container (Hidden by default) -->
+    <div id="videoContainer" style="display: none;">
+      <iframe 
+        id="projectVideo"
+        width="100%" 
+        height="315" 
+        src="" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+      <button onclick="hideVideo()" style="margin-top: 10px; cursor: pointer;">Close Video</button>
+    </div>
   </div>
 
-  <!-- Text Section -->
-  <div class="text-center">
+  <div class="project-text">
     <h3>Project #2: think of yooko</h3>
     <p>Experimenting with Zoom's green screen feature, i created a music video for NEW YORK's "Think of You". This piece is titled "think of yooko" in honor of my baby (cat). Truly, i think of him all day.</p>
   </div>
