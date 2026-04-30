@@ -33,6 +33,7 @@ ul, ol {
 }
 .topnav {
   background-color: #333;
+  text-align: center;
   overflow: hidden;
 }
 
