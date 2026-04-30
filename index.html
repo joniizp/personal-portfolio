@@ -134,16 +134,18 @@ const originalImage = `
        onclick="showVideo()">`;
 
 function showVideo() {
-  // Hide the image
-  document.getElementById('videoPlaceholder').style.display = 'none';
+  const container = document.getElementById('project2-container');
   
-  // Show the video container
-  const container = document.getElementById('videoContainer');
-  container.style.display = 'block';
-  
-  // Set your video URL here
-  const videoLink = "YOUR_VIDEO_URL_HERE"; 
-  document.getElementById('projectVideo').src = videoLink;
+  // Replace the image with the video tag
+  container.innerHTML = `
+    <video width="100%" controls autoplay>
+      <source src="imagesp/think_of_yooko.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p onclick="location.reload()" style="cursor:pointer; text-decoration:underline; font-size: 0.8em; margin-top: 10px;">
+      Reset to Image
+    </p>
+  `;
 }
 
 function hideVideo() {
